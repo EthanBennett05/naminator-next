@@ -57,7 +57,7 @@ jobs:
         - name: Run tests
           run: npm test
           env:
-            DATABASE_URL: "hardcoded-value"
+            DATABASE_URL: ${{secrets.DATABASE_URL}}
 
   build:
     name: Build
@@ -79,7 +79,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          DATABASE_URL: "hardcoded-value"
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4

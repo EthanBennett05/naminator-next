@@ -8,7 +8,7 @@ export default auth((req) => {
   // Always allow access to auth API routes
   if (isApiAuth) return;
 
-  // Redirect logged-in users away from login page
+  // Redirect logged-in users away from login  page
   if (isOnLoginPage && isLoggedIn) {
     return Response.redirect(new URL("/", req.nextUrl));
   }

@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-// vi.hoisted() ensures mockCreate is initialized before the mock factory runs,
+// vi.hoisted() ensures mockCreate  is initialized before the mock factory runs,
 // since vi.mock() is hoisted before imports but plain `const` declarations are not.
 // The mock uses a regular function (not arrow function) so it can be called with `new`.
 const mockCreate = vi.hoisted(() => vi.fn());

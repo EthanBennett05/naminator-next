@@ -44,7 +44,9 @@ Respond ONLY with valid JSON in this exact format (no markdown, no explanation):
 [
   { "name": "ExampleName", "goodness": 3.5 },
   { "name": "AnotherName", "goodness": 4.2 }
-]`,
+]
+DO NOT Include any markdown code fences
+`,
       },
     ],
   });

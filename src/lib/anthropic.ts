@@ -12,6 +12,7 @@ interface GeneratedNameResult {
 /**
  * Uses Claude to generate creative name combinations from two input names.
  * Returns an array of generated names with goodness scores.
+ * Should work yay!
  */
 export async function generateNameCombinations(
   name1: string,

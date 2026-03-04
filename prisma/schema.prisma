@@ -10,11 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// ============================================================
-// Auth.js (NextAuth v5) Models
-// These models are required by the Prisma Adapter for Auth.js
-// Docs: https://authjs.dev/getting-started/adapters/prisma
-// ============================================================
 
 model User {
   id            String    @id @default(cuid())
